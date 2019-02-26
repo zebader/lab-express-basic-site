@@ -31,6 +31,7 @@ If you are looking for some inspiration, you can go here: https://lab-express-ba
 1. A home page
 2. An "about" page
 3. A photo gallery page
+4. Not found page
 
 **Your site should also have a `public/` folder for:**
 
@@ -48,7 +49,7 @@ Your starter code only has an empty `app.js` file.
 In addition to that, you will need:
 
 1. a `package.json` file (run `npm init` to create one)
-2. to npm install `express` (dont' forget to `--save` if you are using older versions of npm)
+2. to npm install `express`
 3. a `views/` folder for your separate HTML files
 4. a `public/` folder for your publicly available files like CSS, images and (bonus) JavaScript
 
