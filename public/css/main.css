@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,800');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
 html{
   font-size: 18px;
 }
 body{
   font-family: 'Poppins', sans-serif;
+}
+a,a:hover,a:visited,a:active,a:focus{
+  text-decoration: none;
+  color: #55060b;
+  font-weight: 800;
 }
 nav{
   position: fixed;
@@ -14,43 +20,91 @@ nav{
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 0px 5%;
+  padding: 0px 10%;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  box-shadow: 0px 5px #b91e28;
 }
+
 nav img{
   width: auto;
   height: 100%;
+}
+@media (max-width: 600px) {
+  nav img{
+    margin:0 auto;
+  }
 }
 nav ul li{
   display: inline;
   margin: 0 30px;
   line-height: 50px;
 }
+@media (max-width: 600px) {
+  nav ul{
+    display: none;
+  }
+}
+
 header{
+  margin-top: 80px;
   position: relative;
-  height: 100vh;
-  background:pink;
+  height: 75vh;
+  background:url(../img/nick-header.jpeg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
+}
+header h1{
+  text-align: center;
+  font-size: 5em;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1080px;
+  margin:0 auto;
+  text-shadow: 4px 4px #b91e28;
+}
+@media (max-width: 600px) {
+  header h1{
+    font-size: 4em;
+  }
 }
 main{
   position: relative;
-  height: 100vh;
-  background:;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  background: #badcff url(../img/glitter.gif);
+  box-shadow: inset 0px 0px 37px 0px rgb(73, 136, 202);
+}
+main.home{
+  overflow: hidden;
 }
 main section{
   width: 100%;
   height: auto;
   max-width: 1080px;
   margin: auto;
-  background: green;
 }
-
+main section h2{
+  text-align: center;
+  font-size: 5em;
+  font-weight: 800;
+  color: #55060b;
+  line-height: 1;
+  position: relative;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  text-shadow: 4px 4px #b91e28;
+}
 
 footer{
   position: relative;
   height: 25vh;
-  background:purple;
+  background:url(../img/nick-footer.gif) center;
+  background-size: contain;
   width: 100%;
 }
