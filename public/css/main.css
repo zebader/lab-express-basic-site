@@ -131,6 +131,10 @@ main.main-gallery section article img:hover{
     width: 100%;
   }
 }
+main.main-404{
+ height:100vh;
+ background: #badcff url(../img/nick-footer-2.gif);
+}
 main section{
   width: 100%;
   height: auto;
