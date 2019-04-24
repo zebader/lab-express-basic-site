@@ -54,6 +54,16 @@ header{
   background-attachment: fixed;
   width: 100%;
 }
+header.header-about{
+  background:url(../img/nick-header-about.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header.header-gallery{
+  background:url(../img/nick-header-gallery.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 header h1{
   text-align: center;
   font-size: 5em;
@@ -81,14 +91,52 @@ main{
   background: #badcff url(../img/glitter.gif);
   box-shadow: inset 0px 0px 37px 0px rgb(73, 136, 202);
 }
-main.home{
+main.main-home{
   overflow: hidden;
+}
+main.main-about{
+ height: auto;
+}
+main.main-about p{
+ margin-bottom: 50px;
+}
+main.main-about img{
+  position: relative;
+  margin: 50px auto;
+  width: 50%;
+  display: block;
+}
+main.main-gallery{
+  height: auto;
+ }
+main.main-gallery section article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+main.main-gallery section article img{
+  width: 50%;
+  transition: all 10000ms;
+}
+main.main-gallery section article img:hover{
+  transform: rotate(1080deg);
+  border-radius: 50%;
+}
+@media (max-width: 600px) {
+  main.main-gallery section article img{
+    width: 100%;
+  }
 }
 main section{
   width: 100%;
   height: auto;
   max-width: 1080px;
   margin: auto;
+  padding: 0 5%;
 }
 main section h2{
   text-align: center;
@@ -105,6 +153,5 @@ footer{
   position: relative;
   height: 25vh;
   background:url(../img/nick-footer.gif) center;
-  background-size: contain;
   width: 100%;
 }
